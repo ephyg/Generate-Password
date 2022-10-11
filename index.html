@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://kit.fontawesome.com/b198cf1a17.js" crossorigin="anonymous"></script>
+    <title>Password Generator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkalami&family=Cinzel:wght@600&family=Roboto&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="main">
+        <div id="container">
+            <h1 id="head-er">Password Generator</h1>
+            <div class="pass-copy">
+                <input type="text" id="Result" value="">
+                <button><i id="copy" class="fa-regular fa-copy"></i></button>
+            </div>
+            <div id="preference">
+                <div id="text-container">
+                    <ul>
+                        <li>Upper Case Letter</li>
+                        <li>Lower Case Letter</li>
+                        <li>Number (Digits)</li>
+                        <li>Characters</li>
+                        <li>Password Length</li>
+
+                    </ul>
+                </div>
+                <div id="checkbox-container">
+                    <input type="checkbox" class="check-box" id="alpha-bet" value=0><br>
+                    <input type="checkbox" class="check-box" id="alpha-low" value=0><br>
+                    <input type="checkbox" class="check-box" id="num-ber" value=0> <br>
+                    <input type="checkbox" class="check-box" id="char-acter" value=0> <br>
+                    <input type="text" class="check-box" id="pass-word"><br>
+                </div>
+            </div>
+            <div id="btn-container">
+                <button id="btn">Generate</button>
+            </div>
+            <script src="javascript.js"></script>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: none;
+}
+
+body {
+    text-decoration: none;
+    background-color: #E0C4FD;
+    font-family: 'Cinzle', serif;
+}
+
+#main {
+    height: 100hv;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    margin-top: 50px;
+    background-color: #ffaf98;
+    height: 500px;
+    width: 600px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+
+
+}
+
+#head-er {
+    font-family: 'Alkalami', serif;
+    font-weight: 500;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.pass-copy {
+    display: flex;
+    position: relative;
+}
+
+#Result {
+    color: #555;
+    border: 1px solid rgb(245, 155, 103);
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    height: 35px;
+    font-size: 15px;
+    width: 300px;
+    text-align: center;
+    outline: none;
+    padding: 5px 45px 5px 15px;
+
+
+}
+
+.pass-copy button {
+    position: absolute;
+    right: 3px;
+    top: 5px;
+    background-color: #5784f5;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    height: 30px;
+    padding: 5px 7px;
+    height: 35px;
+}
+
+
+
+#preference {
+    padding-top: 15px;
+    width: 310px;
+    background-color: rgb(199, 199, 196);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-weight: 300px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(250, 250, 250);
+    border-radius: 10px;
+}
+
+#text-container {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 20px;
+}
+
+#checkbox-container {
+    flex-direction: column;
+    display: flex;
+    padding: 5px 20px;
+    justify-content: space-between;
+}
+
+#preference ul li {
+    margin-bottom: 13px;
+}
+
+#checkbox-container input {
+    border: 0.25px solid rgb(0, 0, 0);
+}
+
+#pass-word {
+    width: 50px;
+    background-color: rgb(255, 254, 254);
+    height: 18px;
+    text-align: center;
+    outline: none;
+
+}
+
+#btn {
+    padding: 10px;
+    font-size: 15px;
+    background-color: #0080ffbd;
+    border-radius: 10px;
+    border-width: 0;
+    color: white;
+    font-weight: bold;
+    transition: opacity 2s;
+}
+
+#btn:active,
+.pass-copy button:active {
+    background-color: rgb(235, 235, 235);
+    color: #2a63f3;
+}
+
+.pass-copy button:before {
+    content: "Copied";
+    position: absolute;
+    top: -45px;
+    right: -5px;
+    background-color: #5784f5;
+    padding: 8px 10px;
+    border-radius: 15px;
+    font-size: 13px;
+    display: none;
+}
+
+.pass-copy.active button::before {
+    display: block;
+}
