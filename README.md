@@ -1,4 +1,4 @@
-# Web-Pass-Generatror
+# Web-Password-Generatror
 
 <div style="display:flex; flex-direction:column;">
   <h2><a href="https://ephyg.github.io/Web-Pass-Generator/">:point_right: Generate Link</a></h2>
